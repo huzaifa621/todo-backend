@@ -11,8 +11,6 @@ const todoRouter = Router();
  * 3. / [POST] -> add todo
  * 4. / [EDIT] -> edit todo w.r.t id
  * 5. /id [DELETE] -> delete todo w.r.t id
- * 
- * 
  */
 
 todoRouter.get("/", async (req, res) => {

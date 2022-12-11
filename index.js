@@ -11,7 +11,9 @@ app.use(express.json());
 
 app.use("/todo", todoRouter);
 
-app.listen(8080, async () => {
+const port = process.env.port || 8080;
+
+app.listen(port, async () => {
    try {
       await connection;
       console.log("http://localhost:8080");
